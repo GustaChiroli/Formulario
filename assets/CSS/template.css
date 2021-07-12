@@ -1,0 +1,109 @@
+*{
+    font-family:arial;
+}
+body {
+    margin:0;
+    padding:0;
+    
+}
+header .topo {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:cover;
+    height:100px;
+    background-color:#3F51B5;
+}
+header .topo .textotopo {
+    font-size:45;
+    color:#D3D7EE;
+    text-shadow: 2px 2px #98c1d9;
+}
+#sessao {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:cover;
+    height:cover;
+    background-color:#CFD8DC;
+    padding:80px;
+    
+}
+#sessao .janelacadastro {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-top:35px;
+    background-color:#FFFFFF;
+    width: 55%;
+    height:100%;
+    border-radius: 20px;
+
+
+}
+#sessao .janelacadastro .quadrado {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:55%;
+    height:100%; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin:10px;
+}
+textarea {
+    width:250px;
+    height:100px;
+    font-size:15px;
+    border: 1px solid rgb(101, 250, 43);
+    resize:none;
+}
+label {
+    display:block;
+}
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=date],
+input[type=email],
+input[type=name],
+input[type=submit] {
+    width:250px;
+    font-size:15px;
+    border: 1px solid rgb(101, 250, 43);
+    border-radius:3px;
+}
+select {
+    width:250px;
+    font-size:15px;
+    border: 1px solid rgb(101, 250, 43);
+}
+input[type=submit] {
+    background-color:#3F51B5;
+    font-size:17px;
+    height:35px;
+    border-radius:3px;
+    color:rgba(255, 255, 255, 0.781);
+}
+
+@media only screen and (min-width:550px) and (max-width:650px) {
+    #sessao .janelacadastro .quadrado {
+        width:70%;
+    }
+    #sessao .janelacadastro {
+        width:70%;
+    }
+
+}
+@media only screen and (max-width:550px) {
+    #sessao .janelacadastro .quadrado {
+        width:80%;
+    }
+    #sessao .janelacadastro {
+        width:80%;
+    }
+}
+
